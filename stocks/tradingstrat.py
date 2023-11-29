@@ -70,12 +70,12 @@ loses = 0
 tally=[]
 losestreak=0
 winstreak = 0
-highest=0
+days=2
 temp = 0
 for i in indexnumber:
     try:
 
-        diff=(spy_1030[i+2]-spy_930[i])
+        diff=(spy_1030[i+days]-spy_930[i])
         if diff >= 1:
             ntotal+=1
             winsprofit=winsprofit+diff*100
